@@ -28,8 +28,8 @@ extension Iterable {
 /// A <: B
 /// () -> A <: () ->  B
 
-/// Contravariat:
-/// B <: A
+/// Contravariant:
+/// A <: B
 /// () -> B  <: () -> A
 
 // Apply Duality
