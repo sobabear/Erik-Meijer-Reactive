@@ -16,8 +16,8 @@ class Iterable<A>(private val getIterator: () -> Iterator<A>) {
 /// A <: B
 /// () -> A <: () ->  B
 
-/// Contravariat:
-/// B <: A
+/// Contravariant:
+/// A <: B
 /// () -> B  <: () -> A
 
 // Apply Duality
