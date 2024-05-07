@@ -65,3 +65,22 @@ extension Observable {
         }
     }
 }
+
+
+
+// Practice
+
+let observable = Observable<Int>.init { observer in
+    Task {
+        observer.onNext(3)
+        observer.onNext(4)
+        try! await Task.sleep(nanoseconds: 5_000_000_000)
+        observer.onNext(100)
+    }
+}
+
+
+let observer = Observer<Int>.init(onNext: { print("value: \($0)") })
+
+observable.subscribe(observer)
+
