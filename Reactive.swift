@@ -39,6 +39,15 @@ typealias _Iterable<A> = () -> Iterator<A>
 typealias _Observer<A> = (A) -> Void
 typealias _Observable<A> = (_Observer<A>) -> Void
 
+/// AS you see Observer can be SETTER
+/// obsevable can be Setter of Setter
+
+/// Iterator is GETTER
+/// Iterable is Getter of Getter
+
+
+
+
 
 struct Observer<A> {
     let onNext: (A) -> Void
