@@ -1,4 +1,6 @@
 import Foundation
+
+
 /// ERROR
 //var any1: Any = String()
 //var int1: Int = any1
